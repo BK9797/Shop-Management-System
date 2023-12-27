@@ -40,16 +40,7 @@ string invoiceDB="./db/invoice.txt";
 
 
 /*******************************************************************************
-*                             Function declaration                             *
-*******************************************************************************/
-
-void clearScreenWithDelay(int delayMilliseconds);
-void coutt(const string& text, int millisecondsPerChar);
-bool isFloat(const string& s);
-
-
-/*******************************************************************************
-*                           Class declaration & definition                    *
+*                           Classes declaration & definition                   *
 *******************************************************************************/
 
 
@@ -489,7 +480,7 @@ class SalesSystem {
 };
 
 /*******************************************************************************
-*                             Function declaration                             *
+*                             Functions declaration                            *
 *******************************************************************************/
 
 void saveInvoiceToJsonFile(const SalesSystem& sa, const std::string& filename);
@@ -534,6 +525,12 @@ void printToFile(const std::string& filename, const std::string& content);
 
 void playcashSound();
 
+void clearScreenWithDelay(int delayMilliseconds);
+
+void coutt(const string& text, int millisecondsPerChar);
+
+bool isFloat(const string& s);
+
 /*******************************************************************************
 *                             Main Function definition                         *
 *******************************************************************************/
@@ -566,7 +563,7 @@ int main() {
 }
 
 /*******************************************************************************
-*                      Function declaration & definition                       *
+*                      Functions definition                                    *
 *******************************************************************************/
 
 int printcashermenu() {
